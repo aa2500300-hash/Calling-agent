@@ -1,0 +1,19 @@
+# Core LiveKit framework — must be 1.x for Gemini Live support
+livekit-agents>=1.0.0
+livekit-api>=0.8.0
+
+# Gemini Live plugin — handles STT + LLM + TTS in one model
+livekit-plugins-google>=1.0.0
+
+# VAD — voice activity detection (still needed alongside Gemini Live)
+livekit-plugins-silero>=1.0.0
+
+# Noise cancellation for telephony audio
+livekit-plugins-noise-cancellation>=1.0.0
+
+# Google Gemini SDK (needed by livekit-plugins-google)
+google-genai>=0.8.0
+
+# Utilities
+python-dotenv>=1.0.0
+certifi>=2024.0.0
