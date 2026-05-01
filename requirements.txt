@@ -1,0 +1,22 @@
+# Core LiveKit agent framework
+livekit-agents[deepgram,openai,silero,noise-cancellation]>=1.0.0
+
+# LiveKit API client
+livekit-api>=0.8.0
+
+# STT / TTS / LLM plugins
+livekit-plugins-deepgram>=1.0.0
+livekit-plugins-openai>=1.0.0
+livekit-plugins-silero>=1.0.0
+livekit-plugins-noise-cancellation>=1.0.0
+
+# Optional: Sarvam (Indian voices — free tier, great for IN market)
+# Uncomment if you want Sarvam TTS:
+# livekit-plugins-sarvam>=1.0.0
+
+# Optional: Cartesia (ultra-low latency TTS — paid)
+# livekit-plugins-cartesia>=1.0.0
+
+# Utilities
+python-dotenv>=1.0.0
+certifi>=2024.0.0
