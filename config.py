@@ -76,3 +76,19 @@ DEFAULT_LLM_PROVIDER = "gemini"
 DEFAULT_LLM_MODEL    = GEMINI_MODEL
 GROQ_MODEL       = "llama-3.3-70b-versatile"
 GROQ_TEMPERATURE = 0.7
+
+# Gemini Live settings
+GEMINI_MODEL = "gemini-3.1-flash-live-preview"
+GEMINI_VOICE = "Aoede"
+
+# Vobiz SIP
+SIP_DOMAIN = os.getenv("VOBIZ_SIP_DOMAIN", "")
+DEFAULT_TRANSFER_NUMBER = os.getenv("DEFAULT_TRANSFER_NUMBER", "")
+
+# System prompt — what the AI says when the call connects
+SYSTEM_PROMPT = """
+You are a helpful voice assistant. When the call connects, greet the caller warmly.
+Say: "Hello! Thank you for calling. How can I help you today?"
+Keep responses short — one or two sentences maximum.
+You are speaking on a phone call, so be natural and conversational.
+"""
